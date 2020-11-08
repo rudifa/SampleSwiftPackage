@@ -21,6 +21,7 @@ jobs:
       run: swift test -v
 
   build_docs:
+    steps:
       uses: sersoft-gmbh/swifty-docs-action@v1
       with:
         # Optional. Defaults to ${{github.workspace}}.
