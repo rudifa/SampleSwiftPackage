@@ -21,6 +21,9 @@ jobs:
       run: swift test -v
 
   build_docs:
+
+    runs-on: macos-latest
+
     steps:
       - uses: sersoft-gmbh/swifty-docs-action@v1
         with:
