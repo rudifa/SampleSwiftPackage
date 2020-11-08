@@ -14,12 +14,13 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      name: sersoft-gmbh/swifty-docs-action@v1
       uses: sersoft-gmbh/swifty-docs-action@v1
       with:
         # Optional. Defaults to ${{github.workspace}}.
         source: ${{github.workspace}}
         # Optional. E.g. run this action on tags and use the tag name.
-        module-version: 1.2.3
+        # module-version: 1.2.3
         # Optional.
         output: docs
         # Optional. Defaults to true.
